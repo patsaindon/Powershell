@@ -51,8 +51,8 @@ $smtpClient.Port = 587
 $smtpClient.EnableSsl = $true
 $SMTPClient.Credentials = New-Object System.Net.NetworkCredential("pat.saindon@gmail.com", "Unraid11!!");
 
-$emailfrom = "pat.saindon@gmail.com"
-$emailto = "vlecouffe@videotron.ca"
+$emailfrom = "email@xxxx.com"
+$emailto = "email@xxxxxxxx.ca"
 $subject = "Fichier du tournoi $Tournoi"
 $body = "Bonjour Vincnent, voici les fichiers du tournoi $Tournoi"
 
