@@ -500,10 +500,10 @@ if ( ($LogEntries.Count -gt 0) -and ($CollectOnly -eq $false) )
 #EndRegion
 
 ##Assembles and sends completion email with DL information##
-$emailFrom = "ldjelil@sqi.gouv.qc.ca"
-$emailTo = "ldjelil@sqi.gouv.qc.ca"
+$emailFrom = "email@company.com"
+$emailTo = "email@company.com"
+$smtpServer = "mailserver.company.local"
 $subject = "Sous-reseaux AD manquants"
-$smtpServer = "fermexcv01-pro.siq.local"
 $attachment1 = "$($Path)\ADSubnets-Export1.csv"
 $attachment2 = "$($Path)\ADSubnets-MissingSubnets.csv"
 
