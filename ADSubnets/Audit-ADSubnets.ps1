@@ -455,10 +455,10 @@ if ( $CheckSuperscope )
 $ReportObj | fl
 
 ##Assembles and sends completion email with DL information##
-$emailFrom = "ldjelil@sqi.gouv.qc.ca"
-$emailTo = "ldjelil@sqi.gouv.qc.ca"
+$emailFrom = "email@company.com"
+$emailTo = "email@company.com"
+$smtpServer = "mailserver.company.local"
 $subject = "Rapports Sous-resaux AD"
-$smtpServer = "fermexcv01-pro.siq.local"
 $attachment1 = "$($Path)\ADSubnets-Export.csv"
 $attachment2 = "$($Path)\ADSubnets-Overlaps.csv"
 $attachment3 = "$($Path)\ADSubnets-Superscopes.csv"
