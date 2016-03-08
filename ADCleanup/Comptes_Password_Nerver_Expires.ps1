@@ -4,7 +4,7 @@
 ## Variables ##
 ###############
 
-$sourceOU = "OU=Users,OU=azm,DC=siq,DC=local"
+$sourceOU = "OU=Users,DC=company,DC=local"
 
 $emailFrom = "email@company.com"
 $emailTo = "email@company.com"
