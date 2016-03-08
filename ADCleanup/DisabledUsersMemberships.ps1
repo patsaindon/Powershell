@@ -10,10 +10,10 @@ $nOU = "OU=Voute,OU=Users,DC=siq,DC=local"
 $DaysInactive = 365 
 $time = (Get-Date).Adddays(-($DaysInactive))
 
-$emailFrom = "cous02@sqi.gouv.qc.ca"
-$emailTo = "cous02@sqi.gouv.qc.ca"
+$emailFrom = "email@company.com"
+$emailTo = "email@company.com"
+$smtpServer = "mailserver.company.local"
 $subject = "Memberships des comptes suspendus depuis 365 jours"
-$smtpServer = "fermexcv01-pro.siq.local"
 
 $fileDate = (Get-Date).tostring("yyyyMMdd")
 $filename = 'C:\Scripts\ADCleanup\' + $fileDate + '_Memberships_Comptes_Suspendus.csv'
