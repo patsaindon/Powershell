@@ -9,12 +9,11 @@ $time = (Get-Date).Adddays(-($DaysInactive))
 
 $CSVFileLocation = 'C:\Scripts\ADCLeanup\Comptes_Ordinateurs_Non_Connectes_depuis_ 180_jours.csv' 
 
-$emailFrom = "cous02@sqi.gouv.qc.ca"
-$emailTo = "cous02@sqi.gouv.qc.ca"
+$emailFrom = "email@company.com"
+$emailTo = "email@company.com"
+$smtpServer = "mailserver.company.local"
 $subject = "Comptes ordinateurs non connectes depuis 180 jours"
-$smtpServer = "fermexcv01-pro.siq.local"
 
- 
 ###################################################################
 ## Liste les vieux comptes ordinateurs non connectés depuis plus ##
 ## de 180 dans un CSV et l'envoi par courriel au responsable     ## 
