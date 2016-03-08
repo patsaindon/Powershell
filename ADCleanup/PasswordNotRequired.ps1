@@ -2,10 +2,10 @@
 
 $sourceOU = 'OU=Users,OU=azm,DC=siq,DC=local'
 
-$emailFrom = "cous02@sqi.gouv.qc.ca"
-$emailTo = "cous02@sqi.gouv.qc.ca"
+$emailFrom = "email@company.com"
+$emailTo = "email@company.com"
+$smtpServer = "mailserver.company.local"
 $subject = "Comptes utilisateurs avec l'attribut Password Not Required"
-$smtpServer = "fermexcv01-pro.siq.local"
 
 $fileDate = (Get-Date).tostring("yyyyMMdd")
 $filename = 'C:\Scripts\ADCleanup\' + $fileDate + '_PasswordNotRequired.csv'
