@@ -204,10 +204,10 @@ Add-Content $report "</body>"
 Add-Content $report "</html>" 
 
 ##Assembles and sends completion email with DL information##
-$emailFrom = "psaindon85.consultant@sqi.gouv.qc.ca"
-$emailTo = "psaindon85.consultant@sqi.gouv.qc.ca"
+$emailFrom = "email@company.com"
+$emailTo = "email@company.com"
+$smtpServer = "mailserver.company.local"
 $subject = "Comptes utilisateurs desactives"
-$smtpServer = "fermexcv01-pro.siq.local"
 $body = Get-Content $report -Encoding UTF8 | Out-String
 
 Send-MailMessage -To $emailTo -From $emailFrom -Subject $subject -BodyAsHtml -Body $body -SmtpServer $smtpServer
