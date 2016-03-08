@@ -26,10 +26,10 @@
 # Clear The Screen
 Clear-Host
 
-$emailFrom = "psaindon85.consultant@sqi.gouv.qc.ca"
-$emailTo = "psaindon85.consultant@sqi.gouv.qc.ca"
+$emailFrom = "email@company.com"
+$emailTo = "email@company.com"
 $subject = "AD REPLICATION LATENCY/CONVERGENCE Report"
-$smtpServer = "fermexcv01-pro.siq.local"
+$smtpServer = "mailserver.company.local"
 $filename = 'C:\Scripts\TestADReplicationLatency\Report.txt'
 
 # Configure The Appropriate Screen And Buffer Size To Make Sure Everything Fits Nicely
