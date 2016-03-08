@@ -1,0 +1,1 @@
+﻿get-aduser -filter * -Searchbase "dc=siq,dc=local" -pr UserPrincipalName,SamAccountName,PasswordExpired,whenChanged | Export-Csv "C:\Scripts\ADCleanup\PasswiredExpired.csv" -enc utf8
