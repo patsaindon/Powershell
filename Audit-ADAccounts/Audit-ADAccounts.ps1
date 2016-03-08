@@ -849,10 +849,10 @@ Catch
 #EndRegion 
 
 ##Assembles and sends completion email with DL information##
-$emailFrom = "psaindon85.consultant@sqi.gouv.qc.ca"
-$emailTo = "psaindon85.consultant@sqi.gouv.qc.ca"
+$emailFrom = "email@company.com"
+$emailTo = "email@company.com"
 $subject = "Rapports comptes utilisateurs AD"
-$smtpServer = "fermexcv01-pro.siq.local"
+$smtpServer = "mailserver.company.local"
 $attachment1 = "$Path\Report-UserAccounts.xlsx"
 
 
