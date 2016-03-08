@@ -1,0 +1,1 @@
+﻿Get-ADOrganizationalunit -filter 'Name -like "*"' | Set-adobject -ProtectedFromAccidentalDeletion $true
