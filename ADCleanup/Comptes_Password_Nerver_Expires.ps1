@@ -6,10 +6,10 @@
 
 $sourceOU = "OU=Users,OU=azm,DC=siq,DC=local"
 
-$emailFrom = "psaindon85.consultant@sqi.gouv.qc.ca"
-$emailTo = "psaindon85.consultant@sqi.gouv.qc.ca"
+$emailFrom = "email@company.com"
+$emailTo = "email@company.com"
 $subject = "Comptes Password Nerver Expires"
-$smtpServer = "fermexcv01-pro.siq.local"
+$smtpServer = "mailserver.company.local"
 
 $fileDate = (Get-Date).tostring("yyyyMMdd")
 $filename = 'C:\Scripts\ADCleanup\' + $fileDate + '_Comptes_Password_Nerver_Expires.csv'
