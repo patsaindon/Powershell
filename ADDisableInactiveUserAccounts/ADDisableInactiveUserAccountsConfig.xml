@@ -1,0 +1,46 @@
+<config>
+	<AuditMode>False</AuditMode> <!-- required -->
+	<DaysInactive>30</DaysInactive> <!-- required -->
+	<LogsFolder>C:\logs</LogsFolder> <!-- required -->
+	<ResultSetSize>0</ResultSetSize> <!-- optional -->
+	<SearchBase>OU=OrgaznizationUnit,DC=domain,DC=local</SearchBase> <!-- optional -->
+	<SearchScope>2</SearchScope> <!-- optional -->
+	<Server>server.local</Server> <!-- optional -->
+	<ExcludedAccount>user1</ExcludedAccount> <!-- samAccountName, optional -->
+	<ExcludedAccount>user2</ExcludedAccount> <!-- samAccountName, optional -->
+	<ExcludedAccount>user3</ExcludedAccount> <!-- samAccountName, optional -->
+	<ExcludedAccount>user4</ExcludedAccount> <!-- samAccountName, optional -->
+	<ExcludedGroups>CN=Group1,OU=Groups,DC=domain,DC=local</ExcludedGroups> <!-- Group DistinguishedName, optional -->
+	<ExcludedGroups>CN=Group2,OU=Groups,DC=domain,DC=local</ExcludedGroups> <!-- Group DistinguishedName, optional -->
+	<IncludedProperties> <!-- optional, default: Name, DistinguishedName, samAccountName, whenCreated, lastlogontimestamp, enabled -->
+		<PropertyName>Name</PropertyName>
+		<PropertyName>DisplayName</PropertyName>
+		<PropertyName>samAccountName</PropertyName>
+		<PropertyName>DistinguishedName</PropertyName>
+		<PropertyName>whenCreated</PropertyName>
+		<PropertyName>Description</PropertyName>
+		<PropertyName>lastlogontimestamp</PropertyName>
+		<PropertyName>PasswordNeverExpires</PropertyName>
+		<Parent>True</Parent>
+		<!-- add other attributes here -->
+	</IncludedProperties>
+	<CSVReport> <!-- optional -->
+		<GenerateCSVReport>True</GenerateCSVReport> 
+		<Encoding>UTF8</Encoding> <!-- required if GenerateCSVReport -eq True -->
+	</CSVReport>
+	<OperationLogEncoding>UTF8</OperationLogEncoding> <!-- required -->
+	<EmailReport> <!-- optional -->
+		<SendReport>True</SendReport>
+		<From>foo@bar.com</From> <!-- required if SendReport -eq True -->
+		<To>foo2@bar.com</To> <!-- required if SendReport -eq True -->
+		<To>foo3@bar.com</To>
+		<CC>foo4@bar.com</CC>
+		<BCC>foo5@bar.com</BCC>
+		<CustomSubject>Custom Subject</CustomSubject> <!-- optional, always ends with disabled accounts count and disabling status -->
+		<Encoding>UTF8</Encoding>
+		<Port>25</Port>
+		<SmtpServer>smtp.com</SmtpServer> <!-- required if SendReport -eq True -->
+		<UseSSL>True</UseSSL>
+	</EmailReport>
+</config>
+<!-- feel free to remove any optional settings-->
