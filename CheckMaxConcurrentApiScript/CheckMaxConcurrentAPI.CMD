@@ -1,0 +1,1 @@
+powershell.exe -noexit "C:\Scripts\CheckMaxConcurrentApiScript.ps1" -checkmaxconcurrentapi -Computer "adsp1-pro" -CalcMCA $true
